@@ -5,6 +5,8 @@ const app=express();
 
 
 //cargar rutas
+const user_routes = require('./routes/user');
+
 
 
 //middleware de body-parser
@@ -13,10 +15,10 @@ app.use(bodyParse.json());
 
 //configurar cabeceras y cors
 
-//ritas body-parser
-app.get('/probando', (req, res)=>{
-    res.status(200).send({message:'Este es el metodo probando'});
-});
+//rutas base
+
+app.use('/api',user_routes);
+
 
 
 module.exports= app;
