@@ -4,7 +4,6 @@
     <list default="true" id="37b6684a-da3e-41d5-9776-0c98228e7a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/user.js" afterPath="$PROJECT_DIR$/controllers/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+              <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -234,7 +233,7 @@
       <option name="presentableId" value="Default" />
       <updated>1504755436702</updated>
       <workItem from="1504755438496" duration="2731000" />
-      <workItem from="1504981750367" duration="2955000" />
+      <workItem from="1504981750367" duration="3508000" />
     </task>
     <task id="LOCAL-00001" summary="configuracion de nodejs y express basica">
       <created>1504757776251</created>
@@ -257,11 +256,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504983073340</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Accion para el registro de usuarios">
+      <created>1504984722264</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1504984722264</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5686000" />
+    <option name="totallyTimeSpent" value="6239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -305,7 +311,8 @@
     <MESSAGE value="configuracion de nodejs y express basica" />
     <MESSAGE value="Creacion de modelos y entidades" />
     <MESSAGE value="Creacion de controlador y rutas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion de controlador y rutas" />
+    <MESSAGE value="Accion para el registro de usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Accion para el registro de usuarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -370,7 +377,7 @@
     <entry file="file://$PROJECT_DIR$/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+          <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding />
         </state>
       </provider>

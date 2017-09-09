@@ -9,9 +9,10 @@ const User = require('../models/user');
 
 function pruebas(resq, res) {
     res.status(200).send({
-        message:'probando el controlador de usuarios y la accion pruebas'
+        message: 'probando el controlador de usuarios y la accion pruebas'
     })
 }
+
 function saveUser(req, res) {
     //creando objeto de usuario
     var user = new User();
@@ -20,37 +21,48 @@ function saveUser(req, res) {
     var params = req.body;
 
 
-
-    if (params.password && params.name && params.surname && params.email){
+    if (params.password && params.name && params.surname && params.email) {
 
         //asignar valores al obj usuario
-        user.name=params.name;
-        user.surname=params.surname;
-        user.email=params.email;
-        user.role='ROLE_USER';
-        user.image=null;
-        //cifrado de contrasena
-        bcrypt.hash(params.password, null,null, function (err, hash) {
-            user.password=hash;
-            //guardar usuario en base de datos
-            user.save((err, userStored) => {
-                if (err){
-                    res.status(500).send({message:'error al guardar el usuario'});
+        user.name = params.name;
+        user.surname = params.surname;
+        user.email = params.email;
+        user.role = 'ROLE_USER';
+        user.image = null;
+        User.findOne({email: user.email.toLowerCase()}, (err, issetUser) => {
+            if (err) {
+                res.status(500).send({message: 'error al comprobar el usuario'});
+            } else {
+                if (!issetUser) {
+                    //cifrado de contrasena
+                    bcrypt.hash(params.password, null, null, function (err, hash) {
+                        user.password = hash;
+                        //guardar usuario en base de datos
+                        user.save((err, userStored) => {
+                            if (err) {
+                                res.status(500).send({message: 'error al guardar el usuario'});
+                            } else {
+                                if (!userStored) {
+                                    res.status(404).send({message: 'no se ha regisrado el usuario'});
+                                } else {
+                                    res.status(200).send({user: userStored});
+                                }
+                            }
+                        })
+                    })
                 }else {
-                    if(!userStored){
-                        res.status(404).send({message:'no se ha regisrado el usuario'});
-                    }else {
-                        res.status(200).send({user:userStored});
-                    }
+                    res.status(200).send({message: 'El usuario no puede registrarse porque ya existe'});
                 }
-            })
-        })
+            }
+        });
 
-    }else {
-        res.status(200).send({message:'Introduce los datos correctamente para poder registrar al usuario'});
+
+    } else {
+        res.status(200).send({message: 'Introduce los datos correctamente para poder registrar al usuario'});
     }
 }
-module.exports={
+
+module.exports = {
     pruebas,
     saveUser
 };
