@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37b6684a-da3e-41d5-9776-0c98228e7a8b" name="Default" comment="">
+    <list default="true" id="37b6684a-da3e-41d5-9776-0c98228e7a8b" name="Default" comment="Configuracion de Cabeceras HTTP y acceso CORS">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -213,7 +212,7 @@
       <updated>1504755436702</updated>
       <workItem from="1504755438496" duration="2731000" />
       <workItem from="1504981750367" duration="4314000" />
-      <workItem from="1504997497362" duration="17723000" />
+      <workItem from="1504997497362" duration="17791000" />
     </task>
     <task id="LOCAL-00001" summary="configuracion de nodejs y express basica">
       <created>1504757776251</created>
@@ -355,11 +354,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505075879242</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Configuracion de Cabeceras HTTP y acceso CORS">
+      <created>1505076238950</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1505076238950</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24768000" />
+    <option name="totallyTimeSpent" value="24836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -419,7 +425,8 @@
     <MESSAGE value="subir y mostrar imagen del animal" />
     <MESSAGE value="borrar animales de la bbdd" />
     <MESSAGE value="middleware para rol de administrador" />
-    <option name="LAST_COMMIT_MESSAGE" value="middleware para rol de administrador" />
+    <MESSAGE value="Configuracion de Cabeceras HTTP y acceso CORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuracion de Cabeceras HTTP y acceso CORS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
