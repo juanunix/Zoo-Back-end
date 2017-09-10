@@ -10,9 +10,10 @@ const jwt = require('../services/jwt');
 
 //acciones
 
-function pruebas(resq, res) {
+function pruebas(req, res) {
     res.status(200).send({
-        message: 'probando el controlador de usuarios y la accion pruebas'
+        message: 'probando el controlador de usuarios y la accion pruebas',
+        user:req.user
     })
 }
 
