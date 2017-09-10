@@ -15,42 +15,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/user.js">
+      <file leaf-file-name="animal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/animal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="103" column="30" lean-forward="false" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
+            <state relative-caret-position="126">
+              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding>
-                <element signature="n#!!block;n#saveUser#0" expanded="false" />
-                <element signature="n#!!block;n#login#0" expanded="false" />
-                <element signature="n#!!block;n#updateUser#0" expanded="false" />
+                <element signature="n#!!block;n#saveAnimal#0" expanded="false" />
+                <element signature="n#!!block;n#getAnimals#0" expanded="false" />
+                <element signature="n#!!block;n#getAnimal#0" expanded="false" />
+                <element signature="n#!!block;n#updateAnimal#0" expanded="false" />
                 <element signature="n#!!block;n#uploadImage#0" expanded="false" />
                 <element signature="n#!!block;n#getImageFile#0" expanded="false" />
-                <element signature="n#!!block;n#getKeepers#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="animal.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/animal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="85" column="49" lean-forward="true" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
-              <folding>
-                <element signature="n#!!block;n#saveAnimal#0" expanded="false" />
-                <element signature="n#!!block;n#getAnimals#0" expanded="false" />
-                <element signature="n#!!block;n#getAnimal#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="animal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/animal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="234">
+              <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -85,8 +71,8 @@
         <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/controllers/user.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/animal.js" />
         <option value="$PROJECT_DIR$/controllers/animal.js" />
+        <option value="$PROJECT_DIR$/routes/animal.js" />
       </list>
     </option>
   </component>
@@ -141,6 +127,11 @@
               <item name="curso-angular4-avanzado-backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="curso-angular4-avanzado-backend" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="curso-angular4-avanzado-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso-angular4-avanzado-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -265,7 +256,7 @@
       <updated>1504755436702</updated>
       <workItem from="1504755438496" duration="2731000" />
       <workItem from="1504981750367" duration="4314000" />
-      <workItem from="1504997497362" duration="15479000" />
+      <workItem from="1504997497362" duration="16290000" />
     </task>
     <task id="LOCAL-00001" summary="configuracion de nodejs y express basica">
       <created>1504757776251</created>
@@ -379,11 +370,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505073495660</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Actualiza animal">
+      <created>1505073978640</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1505073978640</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22524000" />
+    <option name="totallyTimeSpent" value="23335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -440,7 +438,8 @@
     <MESSAGE value="accion guardado de animales" />
     <MESSAGE value="devolver listado de animales" />
     <MESSAGE value="devolver obj json de animal en concreto" />
-    <option name="LAST_COMMIT_MESSAGE" value="devolver obj json de animal en concreto" />
+    <MESSAGE value="Actualiza animal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualiza animal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -526,14 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -550,18 +541,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/animal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="103" column="30" lean-forward="false" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="189" selection-end-column="1" />
           <folding>
             <element signature="n#!!block;n#saveUser#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
@@ -573,15 +556,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/animal.js">
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="85" column="49" lean-forward="true" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/animal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding>
             <element signature="n#!!block;n#saveAnimal#0" expanded="false" />
             <element signature="n#!!block;n#getAnimals#0" expanded="false" />
             <element signature="n#!!block;n#getAnimal#0" expanded="false" />
+            <element signature="n#!!block;n#updateAnimal#0" expanded="false" />
+            <element signature="n#!!block;n#uploadImage#0" expanded="false" />
+            <element signature="n#!!block;n#getImageFile#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/animal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
