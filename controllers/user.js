@@ -2,6 +2,7 @@
 //modulos
 const bcrypt = require('bcrypt-nodejs');
 const fs = require('fs');
+const path = require('path');
 
 //modelos
 const User = require('../models/user');
@@ -175,10 +176,24 @@ function uploadImage(req, res) {
     }
 }
 
+function getImageFile(req, res) {
+    var imageFile = req.params.imageFile;
+    var path_File='./uploads/users/'+imageFile;
+    fs.exists(path_File, function (exists) {
+        if (exists){
+            res.sendFile(path.resolve(path_File));
+        }else {
+            res.status(404).send({message:'la imagen no existe' });
+        }
+    });
+
+}
+
 module.exports = {
     pruebas,
     saveUser,
     login,
     updateUser,
-    uploadImage
+    uploadImage,
+    getImageFile
 };
