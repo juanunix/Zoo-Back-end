@@ -17,6 +17,35 @@ function pruebas(req, res) {
     })
 }
 
+function saveAnimal(req, res) {
+
+    const animal = new Animal();
+    const params= req.body;
+
+    if (params.name){
+        animal.name= params.name;
+        animal.descriprion= params.descriprion;
+        animal.year= params.year;
+        animal.image= null;
+        animal.user= req.user.sub;
+
+        animal.save((err, animalStored)=>{
+           if (err){
+               res.status(500).send({message:'error en el servidor'});
+           }else{
+               if (!animalStored){
+                   res.status(404).send({message:'no se ha guardado el animal'});
+               }else {
+                   res.status(200).send({animal:animalStored});
+               }
+           }
+        });
+    }else {
+        res.status(200).send({message:'el nombre del animal es obligatorio'});
+    }
+}
+
 module.exports = {
-    pruebas
+    pruebas,
+    saveAnimal
 };
