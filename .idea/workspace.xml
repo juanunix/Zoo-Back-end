@@ -18,12 +18,14 @@
       <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="191" column="18" lean-forward="true" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="204" column="0" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#saveUser#0" expanded="false" />
                 <element signature="n#!!block;n#login#0" expanded="false" />
                 <element signature="n#!!block;n#updateUser#0" expanded="false" />
+                <element signature="n#!!block;n#uploadImage#0" expanded="false" />
+                <element signature="n#!!block;n#getImageFile#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -32,8 +34,8 @@
       <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="234">
+              <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -271,7 +273,7 @@
       <updated>1504755436702</updated>
       <workItem from="1504755438496" duration="2731000" />
       <workItem from="1504981750367" duration="4314000" />
-      <workItem from="1504997497362" duration="11113000" />
+      <workItem from="1504997497362" duration="11523000" />
     </task>
     <task id="LOCAL-00001" summary="configuracion de nodejs y express basica">
       <created>1504757776251</created>
@@ -343,11 +345,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505067986059</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="devolver imagenes e usuario">
+      <created>1505068631205</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1505068631205</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18158000" />
+    <option name="totallyTimeSpent" value="18568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -398,10 +407,13 @@
     <MESSAGE value="middleware de autenticacion" />
     <MESSAGE value="Actualizar Usuario" />
     <MESSAGE value="subir avatar de usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="subir avatar de usuario" />
+    <MESSAGE value="devolver imagenes e usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="devolver imagenes e usuario" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -413,6 +425,8 @@
             <element signature="n#!!block;n#saveUser#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#updateUser#0" expanded="false" />
+            <element signature="n#!!block;n#uploadImage#0" expanded="false" />
+            <element signature="n#!!block;n#getImageFile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -497,20 +511,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="234">
+          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="191" column="18" lean-forward="true" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
+        <state relative-caret-position="270">
+          <caret line="204" column="0" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#saveUser#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#updateUser#0" expanded="false" />
+            <element signature="n#!!block;n#uploadImage#0" expanded="false" />
+            <element signature="n#!!block;n#getImageFile#0" expanded="false" />
           </folding>
         </state>
       </provider>
