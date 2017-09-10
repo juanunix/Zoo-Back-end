@@ -5,6 +5,9 @@ const bcrypt = require('bcrypt-nodejs');
 //modelos
 const User = require('../models/user');
 
+//servicio jwt
+const jwt = require('../services/jwt');
+
 //acciones
 
 function pruebas(resq, res) {
@@ -74,7 +77,15 @@ function login(req, res) {
             if (user) {
                 bcrypt.compare(password, user.password,(err, check)=>{
                     if (check){
-                        res.status(200).send({user});
+                        //comprobar y generar token
+                        if (params.gettoken){
+                            //devolver token
+                            res.status(200).send({token:jwt.createToken(user)})
+
+                        }else {
+                            res.status(200).send({user});
+                        }
+
                     }else {
                         res.status(404).send({message: 'El usuario no ha podido loguearse correctamente'});
                     }
