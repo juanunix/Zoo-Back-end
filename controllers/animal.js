@@ -59,8 +59,24 @@ function getAnimals(req, res) {
     })
 }
 
+function getAnimal(req, res) {
+    const animalId=req.params.id;
+    Animal.findById(animalId).populate('user').exec((err,animal)=>{
+        if (err){
+            res.status(500).send({ message: 'Error en la peticion' });
+        }else {
+            if(!animal){
+                res.status(404).send({ message: 'El animal no existe' });
+            }else {
+                res.status(200).send({ animal });
+            }
+        }
+    });
+}
+
 module.exports = {
     pruebas,
     saveAnimal,
-    getAnimals
+    getAnimals,
+    getAnimal
 };

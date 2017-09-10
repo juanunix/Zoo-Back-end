@@ -11,5 +11,6 @@ const md_upload= multipart({uploadDir:'./uploads/animals'});
 api.get('/pruebas-animales', md_auth.ensureAuth, AnimalController.pruebas);
 api.post('/animal', md_auth.ensureAuth, AnimalController.saveAnimal);
 api.get('/animals',AnimalController.getAnimals);
+api.get('/animal/:id',AnimalController.getAnimal);
 
 module.exports=api;
