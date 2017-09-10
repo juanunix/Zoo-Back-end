@@ -18,37 +18,39 @@
       <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="207" column="17" lean-forward="false" selection-start-line="207" selection-start-column="17" selection-end-line="207" selection-end-column="17" />
+            <state relative-caret-position="125">
+              <caret line="103" column="30" lean-forward="false" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
               <folding>
                 <element signature="n#!!block;n#saveUser#0" expanded="false" />
                 <element signature="n#!!block;n#login#0" expanded="false" />
                 <element signature="n#!!block;n#updateUser#0" expanded="false" />
                 <element signature="n#!!block;n#uploadImage#0" expanded="false" />
                 <element signature="n#!!block;n#getImageFile#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="animal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/animal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
-              <folding>
-                <element signature="n#!!block;n#saveAnimal#0" expanded="false" />
-                <element signature="n#!!block;n#getAnimals#0" expanded="false" />
+                <element signature="n#!!block;n#getKeepers#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="animal.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/animal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="85" column="49" lean-forward="true" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+              <folding>
+                <element signature="n#!!block;n#saveAnimal#0" expanded="false" />
+                <element signature="n#!!block;n#getAnimals#0" expanded="false" />
+                <element signature="n#!!block;n#getAnimal#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="animal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/animal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="126">
+              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -263,7 +265,7 @@
       <updated>1504755436702</updated>
       <workItem from="1504755438496" duration="2731000" />
       <workItem from="1504981750367" duration="4314000" />
-      <workItem from="1504997497362" duration="14985000" />
+      <workItem from="1504997497362" duration="15479000" />
     </task>
     <task id="LOCAL-00001" summary="configuracion de nodejs y express basica">
       <created>1504757776251</created>
@@ -370,11 +372,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505073155348</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="devolver obj json de animal en concreto">
+      <created>1505073495660</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1505073495660</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22030000" />
+    <option name="totallyTimeSpent" value="22524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -430,7 +439,8 @@
     <MESSAGE value="Controlador de animales" />
     <MESSAGE value="accion guardado de animales" />
     <MESSAGE value="devolver listado de animales" />
-    <option name="LAST_COMMIT_MESSAGE" value="devolver listado de animales" />
+    <MESSAGE value="devolver obj json de animal en concreto" />
+    <option name="LAST_COMMIT_MESSAGE" value="devolver obj json de animal en concreto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -532,20 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="207" column="17" lean-forward="false" selection-start-line="207" selection-start-column="17" selection-end-line="207" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!block;n#saveUser#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="n#!!block;n#updateUser#0" expanded="false" />
-            <element signature="n#!!block;n#uploadImage#0" expanded="false" />
-            <element signature="n#!!block;n#getImageFile#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/animal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -554,22 +550,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/animal.js">
+    <entry file="file://$PROJECT_DIR$/routes/animal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+        <state relative-caret-position="126">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="103" column="30" lean-forward="false" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
           <folding>
-            <element signature="n#!!block;n#saveAnimal#0" expanded="false" />
-            <element signature="n#!!block;n#getAnimals#0" expanded="false" />
+            <element signature="n#!!block;n#saveUser#0" expanded="false" />
+            <element signature="n#!!block;n#login#0" expanded="false" />
+            <element signature="n#!!block;n#updateUser#0" expanded="false" />
+            <element signature="n#!!block;n#uploadImage#0" expanded="false" />
+            <element signature="n#!!block;n#getImageFile#0" expanded="false" />
+            <element signature="n#!!block;n#getKeepers#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/animal.js">
+    <entry file="file://$PROJECT_DIR$/controllers/animal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="85" column="49" lean-forward="true" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!block;n#saveAnimal#0" expanded="false" />
+            <element signature="n#!!block;n#getAnimals#0" expanded="false" />
+            <element signature="n#!!block;n#getAnimal#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

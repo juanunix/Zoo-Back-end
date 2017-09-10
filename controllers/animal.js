@@ -74,9 +74,27 @@ function getAnimal(req, res) {
     });
 }
 
+function updateAnimal(req, res) {
+    const animalId=req.params.id;
+    const update=req.body;
+
+    Animal.findByIdAndUpdate(animalId, update,{new:true},(err,animalUpdated)=>{
+        if (err){
+            res.status(500).send({ message: 'Error en la peticion' });
+        }else {
+            if(!animalUpdated){
+                res.status(404).send({ message: 'El animal no existe' });
+            }else {
+                res.status(200).send({ animalUpdated });
+            }
+        }
+    });
+}
+
 module.exports = {
     pruebas,
     saveAnimal,
     getAnimals,
-    getAnimal
+    getAnimal,
+    updateAnimal
 };
