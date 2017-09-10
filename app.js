@@ -6,6 +6,7 @@ const app=express();
 
 //cargar rutas
 const user_routes = require('./routes/user');
+const animal_routes = require('./routes/animal');
 
 
 
@@ -18,6 +19,7 @@ app.use(bodyParse.json());
 //rutas base
 
 app.use('/api',user_routes);
+app.use('/api',animal_routes);
 
 
 
