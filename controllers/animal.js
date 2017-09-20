@@ -78,14 +78,14 @@ function updateAnimal(req, res) {
     const animalId=req.params.id;
     const update=req.body;
 
-    Animal.findByIdAndUpdate(animalId, update,{new:true},(err,animalUpdated)=>{
+    Animal.findByIdAndUpdate(animalId, update,{new:true},(err,animal)=>{
         if (err){
             res.status(500).send({ message: 'Error en la peticion' });
         }else {
-            if(!animalUpdated){
+            if(!animal){
                 res.status(404).send({ message: 'El animal no existe' });
             }else {
-                res.status(200).send({ animalUpdated });
+                res.status(200).send({ animal });
             }
         }
     });
